@@ -12,6 +12,7 @@ CREATE TABLE SRD_06022023_UK_Accidents_SQOOP
   Car_Passenger INT,
   Bus_or_Coach_Passenger INT,
   Pedestrian_Road_Maintenance_Worker INT,
+  #TEST COMMENT
   Casualty_Type INT,
   Casualty_Home_Area_Type INT)
 ;
