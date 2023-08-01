@@ -8,3 +8,8 @@ hive_df = spark.sql("SELECT * FROM uk_accidents WHERE Accident_Index != 'Acciden
 hive_df.show()
 replaced_df = hive_df.na.replace('', 'N/A')
 replaced_df.write.mode("overwrite").parquet("/user/bigdatacloudxlab27228/SRD_05312023_UK_Accidents_Curated")
+
+
+# Convert Parquet to CSV
+csv_df = spark.read.parquet("/user/bigdatacloudxlab27228/SRD_05312023_UK_Accidents_Curated")
+csv_df.write.mode("overwrite").csv("/user/bigdatacloudxlab27228/SRD_05312023_UK_Accidents_Curated_CSV")
