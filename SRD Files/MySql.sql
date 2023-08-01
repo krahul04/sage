@@ -8,6 +8,7 @@ CREATE TABLE SRD_06022023_UK_Accidents_SQOOP
   Age_Band_of_Casualty INT,
   Casualty_Severity INT,
   Pedestrian_Location INT,
+  #comment
   Pedestrian_Movement INT,
   Car_Passenger INT,
   Bus_or_Coach_Passenger INT,
