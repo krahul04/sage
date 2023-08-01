@@ -1,0 +1,5 @@
+hdfs dfs scp /Users/shanthanreddydondapaati/Downloads/UK_Accidents_10_years_history_with_many_variables/Casualties0514.csv bigdatacloudxlab27228@f.cloudxlab.com:/home/bigdatacloudxlab27228/SRD_05312023_UK_Accidents_data
+hdfs dfs -mkdir /user/bigdatacloudxlab27228/SRD_05312023_UK_Accidents_Curated
+hive -f /user/bigdatacloudxlab27228/SRD_05312023_UK_Accidents_Landing/hive.hql
+spark-submit /home/bigdatacloudxlab27228/SRD_05312023_UK_Accidents_Landing/Spark.py
+sh /home/bigdatacloudxlab27228/SRD_05312023_UK_Accidents_Landing/Sqoop.sh
